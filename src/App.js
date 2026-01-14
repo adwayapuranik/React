@@ -19,6 +19,10 @@ class App extends Component {
       </Greet>
       <Greet name="clarke" heroName="Superman"/>
 
+      <Welcome name="Kira" heroName="Wonderwoman"/>
+      <Welcome name="Bruce" heroName="Batman"/>
+      <Welcome name="clarke" heroName="Superman"/>
+
     </div>
     );
   }
