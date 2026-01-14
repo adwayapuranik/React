@@ -1,5 +1,12 @@
 import React from 'react'
 
-export const Greet = () => <h1>Hello adwaya</h1> //named export
-
+export const Greet = props => {
+    console.log(props);
+    return ( 
+        <div>
+        <h1>Hello {props.name} aka {props.heroName}</h1> 
+        {props.children}
+        </div>
+    )
+}
 //export default Greet; //default export
