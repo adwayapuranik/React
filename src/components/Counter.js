@@ -12,8 +12,12 @@ class Counter extends Component {
 
 increment() {
     // this.state.count = this.state.count + 1 doesnt change count in UI doesnt get rendered, dont modify the state directly
+    //
     this.setState({
         count: this.state.count + 1
+    }, 
+    () => {
+        console.log('Callback value', this.state.count);
     })
     console.log(this.state.count);
 }
